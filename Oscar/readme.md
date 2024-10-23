@@ -25,7 +25,7 @@ SELECT COUNT(*) FROM indicados_ao_oscar WHERE "Name" Like "%Natalie Portman%" AN
 R:Não
 
 Q:
-```
+```sql
 SELECT * FROM indicados_ao_oscar WHERE "Name" Like "%Amy Adams%";
 ```
 
@@ -34,7 +34,7 @@ SELECT * FROM indicados_ao_oscar WHERE "Name" Like "%Amy Adams%";
 R:Nenhum
 
 Q:
-```
+```sql
 SELECT ano_cerimonia FROM indicados_ao_oscar WHERE nome_do_filme = "toy story%" AND vencedor = "true";
 
 ```
@@ -44,7 +44,7 @@ SELECT ano_cerimonia FROM indicados_ao_oscar WHERE nome_do_filme = "toy story%" 
 R:1977
 
 Q:
-```
+```sql
 SELECT * FROM indicados_ao_oscar Where categoria = "ACTRESS";
 ```
 
@@ -53,7 +53,7 @@ SELECT * FROM indicados_ao_oscar Where categoria = "ACTRESS";
 R:Janet Gaynor no ano de 1928
 
 Q:
-```
+```sql
 SELECT * FROM indicados_ao_oscar WHERE categoria= "ACTRESS" AND vencedor = "true";
 ```
 
@@ -62,7 +62,7 @@ SELECT * FROM indicados_ao_oscar WHERE categoria= "ACTRESS" AND vencedor = "true
 R: true = 1 e false = 2.
 
 Q:
-``
+``sql
 UPDATE indicados_ao_oscar
 SET vencedor = "1"
 WHERE vencedor = "true";
@@ -77,7 +77,7 @@ WHERE vencedor = "false";
 R: 78
 
 Q:
-```
+```sql
 SELECT * FROM indicados_ao_oscar WHERE nome_do_filme = "Crash";
 ```
 
@@ -86,14 +86,14 @@ SELECT * FROM indicados_ao_oscar WHERE nome_do_filme = "Crash";
 R: Sim
 
 Q:
-```
+```sql
 select * from indicados_ao_oscar where nome_do_filme = "central station";
 ```
 
 * Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
 
 Q:
-```
+```sql
 INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) 
 VALUES (2004,2005,3,'Melhor Filme de Animação','Stephen Hillenburg','Bob Esponja: O Filme','true');
 
@@ -109,7 +109,7 @@ VALUES (2019,2020,3,'Melhor Filme de Animação','Maurício de Sousa Produções
 R:Não
 
 Q:
-```
+```sql
 select * from indicados_ao_oscar where nome_do_indicado = "Denzel Washington" and vencedor = "true";
 ```
 
@@ -118,10 +118,6 @@ select * from indicados_ao_oscar where nome_do_indicado = "Denzel Washington" an
 R:Nenhum
 
 Q:
-```
+```sql
 select nome_do_indicado, nome_do_filme, vencedor from indicados_ao_oscar where categoria = "best picture" and vencedor = "true";
 ```
-
-* Bonus: Quais os filmes que ganharam o Oscar de Melhor Filme e Melhor Diretor na mesma cerimonia?
-
-* Bonus: Denzel Washington e Jamie Foxx já concorreram ao Oscar no mesmo ano?
