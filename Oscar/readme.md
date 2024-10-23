@@ -90,7 +90,19 @@ Q:
 select * from indicados_ao_oscar where nome_do_filme = "central station";
 ```
 
-* Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser. 
+* Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
+
+Q:
+```
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) 
+VALUES (2004,2005,3,'Melhor Filme de Animação','Stephen Hillenburg','Bob Esponja: O Filme','true');
+
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) 
+VALUES (2015,2016,3,'Melhor Filme de Animação','Stephen Hillenburg','Bob Esponja: Um Herói Fora d. Água','true');
+
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) 
+VALUES (2019,2020,3,'Melhor Filme de Animação','Maurício de Sousa Produções','Turma da Mônica: O Filme','true');
+```
 
 * Denzel Washington já ganhou algum Oscar?
 
