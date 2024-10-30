@@ -24,7 +24,8 @@ Contém a base de indicados da empresa Momento para treinar consultas complexas 
 Vamos fazer algumas perguntas para brincar de análise exploratória de dados com MySQL.
 
 * Quantos funcionarios da empresa Momento trabalham no departamento de vendas?
-
+  R: 5
+  Q:select count(*) from funcionarios where departamento_id like "8";
 * Inclua suas próprias informações no departamento de Tecnologia da empresa.
 
 * Agora diga, quantos funcionários temos ao total na empresa?
