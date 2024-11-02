@@ -142,9 +142,60 @@ SELECT COUNT(*) FROM funcionarios WHERE data_contratacao LIKE '%1987%'
 ```
 
 * Como a média salarial dos funcionários da "Momento" evoluiu nos últimos anos?
+R:
+AVG(salario),data_y
+24000.000000,1987
+4400.000000,1987
+17000.000000,1989
+9000.000000,1990
+6000.000000,1991
+17000.000000,1993
+17990.000000,1994
+9000.000000,1994
+11000.000000,1994
+11700.000000,1994
+3100.000000,1995
+7900.000000,1995
+8000.000000,1996
+14000.000000,1996
+4000.000000,1996
+13000.000000,1996
+4800.000000,1997
+2800.000000,1997
+8200.000000,1997
+7700.000000,1997
+2900.000000,1997
+8200.000000,1997
+6500.000000,1997
+13500.000000,1997
+3900.000000,1997
+6000.000000,1997
+4800.000000,1998
+7800.000000,1998
+2600.000000,1998
+2700.000000,1998
+8600.000000,1998
+8400.000000,1998
+2500.000000,1999
+7000.000000,1999
+4200.000000,1999
+6900.000000,1999
+19650.000000,2000
+19650.000000,2024
+
 Q:
 ```sql
 SELECT AVG(salario), year(data_contratacao) as data_y FROM funcionarios
 GROUP BY data_contratacao
 order by data_y;
 ```
+
+### Médias salariais
+
+* Qual a média salarial dos funcionários da empresa Momento, excluindo-se o CEO, CMO e CFO?
+
+* Qual a média salarial do departamento de tecnologia? 
+
+* Qual o departamento com a maior média salarial?
+
+* Qual o departamento com o menor número de funcionários?
